@@ -1,15 +1,16 @@
 package hiber.model;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 import java.util.Objects;
+
 
 @Entity
 @Table(name = "cars")
 public class Car {
-    @Id
-    @GeneratedValue
-    private Long id;
 
+    @Id
     @Column(name = "model")
     String model;
 
@@ -22,10 +23,6 @@ public class Car {
     public Car(String model, int series) {
         this.model = model;
         this.series = series;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getModel() {
@@ -59,10 +56,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "model='" + model + '\'' +
-                ", series=" + series +
-                '}';
+        return "model = " + model + ", series = " + series;
     }
 
 }
