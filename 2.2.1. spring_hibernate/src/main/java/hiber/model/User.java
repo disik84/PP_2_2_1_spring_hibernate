@@ -1,4 +1,3 @@
-//17:58
 package hiber.model;
 
 import javax.persistence.*;

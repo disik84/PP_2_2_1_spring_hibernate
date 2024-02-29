@@ -1,4 +1,3 @@
-//17:58
 package hiber.config;
 
 import hiber.model.Car;

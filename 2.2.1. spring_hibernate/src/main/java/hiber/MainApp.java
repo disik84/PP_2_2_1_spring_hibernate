@@ -1,4 +1,3 @@
-//17:58
 package hiber;
 
 import hiber.config.AppConfig;
